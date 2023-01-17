@@ -1,5 +1,6 @@
 ﻿using NttData.FileManagement.Business.Logic.Contracts;
 using NttData.FileManagement.Common.Model;
+using NttData.FileManagement.DataAccess.Repository.Implementations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,10 @@ namespace NttData.FileManagement.Business.Logic.Implementations
         {
             student.Age = CalculateAge(student.Birthday);
 
-            return false;
+            StudentRepository studentRepository = new StudentRepository();
+
+            Console.WriteLine(student.Age);
+            return studentRepository.Add(student);
         }
 
         private int CalculateAge(DateTime birthday)
