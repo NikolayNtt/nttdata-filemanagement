@@ -12,7 +12,16 @@ namespace NttData.FileManagement.Business.Logic.Implementations
     {
         public bool Add(Student student)
         {
-            throw new NotImplementedException();
+            student.Age = CalculateAge(student.Birthday);
+
+            return false;
+        }
+
+        private int CalculateAge(DateTime birthday)
+        {
+            var days = (DateTime.Now - birthday).TotalDays;
+
+            return (int)Math.Floor(days / 365);
         }
     }
 }
