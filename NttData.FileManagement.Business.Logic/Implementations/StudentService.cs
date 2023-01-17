@@ -17,7 +17,6 @@ namespace NttData.FileManagement.Business.Logic.Implementations
 
             StudentRepository studentRepository = new StudentRepository();
 
-            Console.WriteLine(student.Age);
             return studentRepository.Add(student);
         }
 
