@@ -24,7 +24,10 @@ namespace NttData.FileManagement.Presentation.WinSite
         {
             IStudentService studentService = new StudentService();
             Student student = new Student();
-            
+            student.Id = int.Parse(txtId.Text);
+            student.Name = txtName.Text;
+            student.Surname = txtSurname.Text;
+            student.Birthday = DateTime.ParseExact(txtBirthday.Text, "dd/MM/yyyy", null);
 
 
             studentService.Add(student);
