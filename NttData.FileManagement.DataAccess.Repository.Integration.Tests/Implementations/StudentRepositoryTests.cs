@@ -35,7 +35,7 @@ namespace NttData.FileManagement.DataAccess.Repository.Implementations.Tests
 
             Student studentFromFile = GetStudent(path);
 
-            File.Delete(path);
+            DeleteStudentsFile(path);
 
             Assert.AreEqual(createdStudent, studentFromFile);
         }
@@ -64,6 +64,11 @@ namespace NttData.FileManagement.DataAccess.Repository.Implementations.Tests
             }
 
             return student;
+        }
+
+        private void DeleteStudentsFile(string path)
+        {
+            File.Delete(path);
         }
     }
 }
