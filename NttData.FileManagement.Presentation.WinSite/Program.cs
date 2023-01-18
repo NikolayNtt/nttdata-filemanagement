@@ -16,7 +16,7 @@ namespace NttData.FileManagement.Presentation.WinSite
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new lblId());
+            Application.Run(new frmStudent());
         }
     }
 }

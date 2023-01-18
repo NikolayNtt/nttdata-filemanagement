@@ -1,6 +1,6 @@
 ﻿namespace NttData.FileManagement.Presentation.WinSite
 {
-    partial class lblId
+    partial class frmStudent
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(lblId));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStudent));
             this.lblName = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
             this.lblSurname = new System.Windows.Forms.Label();
             this.lblBithday = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblId = new System.Windows.Forms.Label();
             this.txtBirthday = new System.Windows.Forms.TextBox();
             this.txtSurname = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
@@ -60,10 +60,10 @@
             resources.ApplyResources(this.lblBithday, "lblBithday");
             this.lblBithday.Name = "lblBithday";
             // 
-            // label4
+            // lblId
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
+            resources.ApplyResources(this.lblId, "lblId");
+            this.lblId.Name = "lblId";
             // 
             // txtBirthday
             // 
@@ -87,7 +87,7 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // lblId
+            // frmStudent
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -95,12 +95,13 @@
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtSurname);
             this.Controls.Add(this.txtBirthday);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblId);
             this.Controls.Add(this.lblBithday);
             this.Controls.Add(this.lblSurname);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.lblName);
-            this.Name = "lblId";
+            this.Name = "frmStudent";
+            this.Load += new System.EventHandler(this.frmStudent_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,7 +113,7 @@
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label lblSurname;
         private System.Windows.Forms.Label lblBithday;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.TextBox txtBirthday;
         private System.Windows.Forms.TextBox txtSurname;
         private System.Windows.Forms.TextBox txtName;
