@@ -28,11 +28,10 @@ namespace NttData.FileManagement.DataAccess.Repository.Implementations.Tests
 
             var path = @ConfigurationManager.AppSettings.Get("StudentsFilePath");
 
-            using (FileStream aFile = new FileStream(path, FileMode.Append, FileAccess.Write))
-            using (StreamWriter sw = new StreamWriter(aFile))
-            {
-                sw.WriteLine(createdStudent.ToString());
-            }
+            //Se puede hacer todo en un solo using con C# 8
+
+            StudentRepository studentRepository = new StudentRepository();
+            studentRepository.Add(createdStudent);
 
             Student studentFromFile = GetStudent(path);
 
