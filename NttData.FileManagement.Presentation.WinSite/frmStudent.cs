@@ -4,6 +4,7 @@ using NttData.FileManagement.Common.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -13,9 +14,9 @@ using System.Windows.Forms;
 
 namespace NttData.FileManagement.Presentation.WinSite
 {
-    public partial class lblId : Form
+    public partial class frmStudent : Form
     {
-        public lblId()
+        public frmStudent()
         {
             InitializeComponent();
         }
@@ -33,6 +34,12 @@ namespace NttData.FileManagement.Presentation.WinSite
             studentService.Add(student);
 
             MessageBox.Show("The student is saved!");
+        }
+
+        private void frmStudent_Load(object sender, EventArgs e)
+        {
+            string sAtrr = ConfigurationManager.AppSettings.Get("StudentsFilePath");
+            MessageBox.Show(sAtrr);
         }
     }
 }

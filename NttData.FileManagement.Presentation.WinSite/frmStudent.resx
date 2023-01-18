@@ -221,31 +221,31 @@
   <data name="&gt;&gt;lblBithday.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblId.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lblId.Location" type="System.Drawing.Point, System.Drawing">
     <value>280, 76</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lblId.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 20</value>
   </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblId.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
+  <data name="lblId.Text" xml:space="preserve">
     <value>Id</value>
   </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
+  <data name="&gt;&gt;lblId.Name" xml:space="preserve">
+    <value>lblId</value>
   </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblId.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblId.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lblId.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="txtBirthday.Location" type="System.Drawing.Point, System.Drawing">
@@ -348,7 +348,7 @@
     <value>Form1</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>lblId</value>
+    <value>frmStudent</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
